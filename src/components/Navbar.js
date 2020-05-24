@@ -2,6 +2,7 @@ import React from "react";
 import { Contact } from "./Contact";
 import { Portfolio } from "./Portfolio";
 import { Courses } from "./Courses";
+import { Home } from "./Home";
 
 import {
     BrowserRouter as Router,
@@ -24,7 +25,9 @@ export function Navbar() {
                 </div>
 
                 <Switch>
-              
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
                     <Route path="/contact">
                         <Contact />
                     </Route>
