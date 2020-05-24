@@ -5,7 +5,8 @@ export function Contact() {
 
     return (
         <>
-            <h1>Contact</h1>
+            <h1 className="centered">Contact me</h1>
+
             <div>
                 <ContactType
                     link="https://api.whatsapp.com/send?phone=351920438006/"

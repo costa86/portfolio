@@ -6,7 +6,7 @@ export function ContactType(props) {
             <h3>
                 <a href={props.link} rel='noopener noreferrer' target="_blank">
                     <span >
-                        <img src={props.img} alt={props.alt} title={props.title} />
+                        <img className="zoom" src={props.img} alt={props.alt} title={props.title} />
                     </span>
                 </a>
                 {props.text}

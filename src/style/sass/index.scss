@@ -7,6 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom{
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
