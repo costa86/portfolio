@@ -23,12 +23,12 @@ export function Portfolio() {
 
     return (
         <>
-            <h1 className="centered">Portfolio</h1>
-            <h5 className="centered">Here you can check some of my projects, including demonstrations/downloads to 
+            <h1 className="middle">Portfolio</h1>
+            <h5 className="middle">Here you can check some of my projects, including demonstrations/downloads to 
             use them. You can also access their source codes.
             </h5><br></br>
 
-            <table className="table table-hover">
+            <table className="table table-hover table-bordered table-responsive">
                 <thead>
                     <tr>
                         <th>PROJECT</th>
@@ -41,6 +41,9 @@ export function Portfolio() {
                 </thead>
                 <tbody>
                     <PortfolioEach
+                        {...barcode}
+                    />
+                      <PortfolioEach
                         {...barcode}
                     />
                 </tbody>

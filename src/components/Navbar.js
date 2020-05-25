@@ -16,14 +16,14 @@ export function Navbar() {
         <>
             <Router>
                 <div class="topnav">
-                    <Link to="/">LC</Link>
+                    <Link to="/">LOURENÇO COSTA</Link>
                     <div class="topnav-right">
                         <Link to="/portfolio">PORTFOLIO</Link>
                         <Link to="/courses">COURSES</Link>
                         <Link to="/contact">CONTACT</Link>
                     </div>
+                    
                 </div>
-
                 <Switch>
                     <Route exact path="/">
                         <Home />
@@ -41,6 +41,7 @@ export function Navbar() {
                 </Switch>
 
             </Router>
+
         </>
     );
 }
