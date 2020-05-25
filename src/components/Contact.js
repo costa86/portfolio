@@ -10,7 +10,7 @@ export function Contact() {
             <div>
                 <ContactType
                     link="https://api.whatsapp.com/send?phone=351920438006/"
-                    img="https://img.icons8.com/material-outlined/64/000000/whatsapp.png"
+                    img="https://img.icons8.com/material-outlined/50/000000/whatsapp.png"
                     alt="whatsapp"
                     title="whatsapp"
                     text="(+351) 920 438 006">
@@ -18,7 +18,7 @@ export function Contact() {
 
                 <ContactType
                     link="mailto:costa86@zoho.com/"
-                    img="https://img.icons8.com/material-outlined/64/000000/new-post.png"
+                    img="https://img.icons8.com/material-outlined/50/000000/new-post.png"
                     alt="email"
                     title="email"
                     text="costa86@zoho.com">
@@ -26,7 +26,7 @@ export function Contact() {
 
                 <ContactType
                     link="https://github.com/costa86"
-                    img="https://img.icons8.com/material-outlined/64/000000/github.png"
+                    img="https://img.icons8.com/material-outlined/50/000000/github.png"
                     alt="github"
                     title="github"
                     text="github.com/costa86">
@@ -34,7 +34,7 @@ export function Contact() {
 
                 <ContactType
                     link="https://www.linkedin.com/in/costa86/"
-                    img="https://img.icons8.com/material-outlined/64/000000/linkedin.png"
+                    img="https://img.icons8.com/material-outlined/50/000000/linkedin.png"
                     alt="linkedin"
                     title="linkedin"
                     text="linkedin.com/in/costa86">
@@ -42,7 +42,7 @@ export function Contact() {
 
                 <ContactType
                     link="skype:lourenzo86@outlook.com?chat"
-                    img="https://img.icons8.com/material-outlined/64/000000/skype.png"
+                    img="https://img.icons8.com/material-outlined/50/000000/skype.png"
                     alt="skype"
                     title="skype"
                     text="Lourenzo86@outlook.com">

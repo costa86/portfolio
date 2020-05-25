@@ -13,6 +13,10 @@ body {
   align-items: center;
 }
 
+.single{
+  display: block;
+}
+
 .zoom{
   &:hover{
     transform: scale(1.2);

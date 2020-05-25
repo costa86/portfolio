@@ -5,7 +5,7 @@ import { Courses } from "./Courses";
 import { Home } from "./Home";
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link
@@ -16,7 +16,7 @@ export function Navbar() {
         <>
             <Router>
                 <div class="topnav">
-                    <a href="/">LC</a>
+                    <Link to="/">LC</Link>
                     <div class="topnav-right">
                         <Link to="/portfolio">PORTFOLIO</Link>
                         <Link to="/courses">COURSES</Link>
