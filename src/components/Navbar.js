@@ -19,7 +19,7 @@ export function Navbar() {
                     <Link to="/">LOURENÇO COSTA</Link>
                     <div class="topnav-right">
                         <Link to="/portfolio">PORTFOLIO</Link>
-                        <Link to="/courses">COURSES</Link>
+                        {/* <Link to="/courses">COURSES</Link> */}
                         <Link to="/contact">CONTACT</Link>
                     </div>
                     

@@ -3,14 +3,14 @@ export function ContactType(props) {
 
     return (
         <>
-            <h5>
+            <div className="list-group-item">
                 <a href={props.link} rel='noopener noreferrer' target="_blank">
                     <span >
-                        <img className="zoom" src={props.img} alt={props.alt} title={props.title} />
+                        <img className="zoom" src={props.img} alt={props.title} title={props.title} />
                     </span>
-                </a>
+                </a> 
                 {props.text}
-            </h5>
+            </div>
         </>
     );
 }
