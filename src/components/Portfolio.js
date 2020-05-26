@@ -12,6 +12,7 @@ export function Portfolio() {
         source: "https://github.com/costa86/BarcodePrice",
         imgDemo: "https://img.icons8.com/color/48/000000/google-play.png",
         imgSource: "https://img.icons8.com/color/48/000000/github.png",
+        htmlTitle: "Download this app on Google Play",
         features: (
             <ul>
                 <li>Saves user's coordenates</li>
@@ -24,31 +25,23 @@ export function Portfolio() {
     return (
         <>
             <h1 className="middle">Portfolio</h1>
-            <h5 className="middle">Here you can check some of my projects, including demonstrations/downloads to 
+            <h5 className="middle">Here you can check some of my projects, including demonstrations/downloads to
             use them. You can also access their source codes.
             </h5><br></br>
 
-            <table className="table table-hover table-bordered table-responsive">
-                <thead>
-                    <tr>
-                        <th>PROJECT</th>
-                        <th>DESCRIPTION</th>
-                        <th>STACK</th>
-                        <th>FEATURES</th>
-                        <th>DEMO</th>
-                        <th>SOURCE</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div className="container">
+                <div className="row">
                     <PortfolioEach
                         {...barcode}
                     />
-                      <PortfolioEach
+                    <PortfolioEach
                         {...barcode}
                     />
-                </tbody>
-            </table>
-
+                    <PortfolioEach
+                        {...barcode}
+                    />
+                </div>
+            </div>
         </>
     );
 }
