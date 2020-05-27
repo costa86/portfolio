@@ -1,6 +1,29 @@
 import React from "react";
 import presentation from "./../src/assets/presentation.pdf";
 
+let githubIcon = "https://img.icons8.com/material-outlined/60/000000/github.png";
+
+
+export const portfolio = {
+    title: "MY PORTFOLIO (THIS WEBSITE)",
+    description: `Web app to for a web developer's portfolio`,
+    stack: "JavaScript, React, SASS, Bootstrap",
+    demo: "https://costa86.github.io/portfolio",
+    source: "https://github.com/costa86/portfolio",
+    imgDemo: "https://img.icons8.com/color/60/000000/internet.png",
+    imgSource: githubIcon,
+    imgTitle: "https://img.icons8.com/color/40/000000/react-native.png",
+    sourceText: "See the source code",
+    htmlTitle: "See this website in action",
+    features: (
+        <ul>
+            <li>Projects page</li>
+            <li>Contact page</li>
+            <li>Intro page</li>
+            <li>Courses (work in progress)</li>
+        </ul>)
+};
+
 export const reactAPI = {
     title: "REACT WITH API FETCH",
     description: `Web app to search and display information about movies. 
@@ -9,7 +32,7 @@ export const reactAPI = {
     demo: "https://costa86.github.io/react-api",
     source: "https://github.com/costa86/react-api",
     imgDemo: "https://img.icons8.com/color/60/000000/internet.png",
-    imgSource: "https://img.icons8.com/material-outlined/60/000000/github.png",
+    imgSource: githubIcon,
     imgTitle: "https://img.icons8.com/color/40/000000/react-native.png",
     sourceText: "See the source code",
     htmlTitle: "See this website in action",
@@ -31,7 +54,7 @@ export const barcode = {
     demo: "https://play.google.com/store/apps/details?id=com.costa86.barcodeprice",
     source: "https://github.com/costa86/BarcodePrice",
     imgDemo: "https://img.icons8.com/color/60/000000/google-play.png",
-    imgSource: "https://img.icons8.com/material-outlined/60/000000/github.png",
+    imgSource: githubIcon,
     imgTitle: "https://img.icons8.com/color/40/000000/android-os.png",
     htmlTitle: "Download this app on Google Play",
     sourceText: "See the source code",
@@ -58,7 +81,7 @@ export const hackaton = {
     demo: "https://public.tableau.com/profile/louren.o.costa#!/vizhome/Factoresdeinflunciarecolhaseletiva-LIPOR2017/DASHBOARD",
     source: "https://gist.github.com/costa86/9fef1fc6129c9fe0c7af04b1e33abc29",
     imgDemo: "https://img.icons8.com/color/60/000000/tableau-software.png",
-    imgSource: "https://img.icons8.com/material-outlined/60/000000/github.png",
+    imgSource: githubIcon,
     imgTitle: "https://img.icons8.com/color/40/000000/python.png",
     htmlTitle: "See one of the Tableau data visualizations",
     sourceText: "Source code for one of the Python web scrapings",
