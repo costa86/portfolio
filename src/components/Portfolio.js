@@ -1,6 +1,6 @@
 import React from "react";
 import { PortfolioEach } from "./PortfolioEach";
-import { barcode, reactAPI } from "./../projects";
+import { barcode, reactAPI, hackaton } from "./../projects";
 
 export function Portfolio() {
 
@@ -27,6 +27,9 @@ export function Portfolio() {
                     />
                     <PortfolioEach
                         {...reactAPI}
+                    />
+                     <PortfolioEach
+                        {...hackaton}
                     />
                 </div>
             </div>

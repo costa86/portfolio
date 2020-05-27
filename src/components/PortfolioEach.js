@@ -30,7 +30,7 @@ export function PortfolioEach(props) {
 
                         <a href={props.source} rel='noopener noreferrer' target="_blank">
                             <span >
-                                <img className="zoom" src={props.imgSource} alt={props.title} title="Check the source code" />
+                                <img className="zoom" src={props.imgSource} alt={props.title} title={props.sourceText} />
                             </span>
                         </a>
                     </div>

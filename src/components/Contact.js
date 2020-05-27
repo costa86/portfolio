@@ -7,9 +7,9 @@ export function Contact() {
         <>
             <h1 className="middle">Contact me</h1>
 
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
-                <div className="col-4"></div>
+                    <div className="col-sm-4"></div>
                     <div className="col" style={{ padding: "5px" }}>
                         <div className="card border-dark" >
 
@@ -55,7 +55,7 @@ export function Contact() {
 
                         </div>
                     </div>
-                    <div className="col-4"></div>
+                    <div className="col-sm-4"></div>
 
                 </div>
 
