@@ -7,7 +7,7 @@ let githubIcon = "https://img.icons8.com/material-outlined/60/000000/github.png"
 export const portfolio = {
     title: "MY PORTFOLIO (THIS WEBSITE)",
     description: `Web app to for a web developer's portfolio`,
-    stack: "JavaScript, React, SASS, Bootstrap",
+    stack: "JavaScript, React, HTML, CSS, SASS, Bootstrap",
     demo: "https://costa86.github.io/portfolio",
     source: "https://github.com/costa86/portfolio",
     imgDemo: "https://img.icons8.com/color/60/000000/internet.png",
@@ -28,7 +28,7 @@ export const reactAPI = {
     title: "REACT WITH API FETCH",
     description: `Web app to search and display information about movies. 
     The data is obtained from an API`,
-    stack: "JavaScript, React, SASS, Bootstrap",
+    stack: "JavaScript, React, HTML, CSS, Bootstrap",
     demo: "https://costa86.github.io/react-api",
     source: "https://github.com/costa86/react-api",
     imgDemo: "https://img.icons8.com/color/60/000000/internet.png",
