@@ -4,6 +4,26 @@ import presentation from "./../src/assets/presentation.pdf";
 let githubIcon = "https://img.icons8.com/material-outlined/60/000000/github.png";
 
 
+export const sgfJava = {
+    title: "VEHICLE FLEET MANAGEMENT",
+    description: `Desktop app to manage vehicle fleets`,
+    stack: "Java + Swing",
+    demo: "https://github.com/costa86/VehicleFleetManagement/blob/master/GestaoFrota.jar",
+    source: "https://github.com/costa86/VehicleFleetManagement",
+    imgDemo: "https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png",
+    imgSource: githubIcon,
+    imgTitle: "https://img.icons8.com/color/40/000000/java-coffee-cup-logo.png",
+    sourceText: "See the source code",
+    htmlTitle: "Download the ready-to-use software",
+    features: (
+        <ul>
+            <li>Projects page</li>
+            <li>Contact page</li>
+            <li>Intro page</li>
+            <li>Courses (work in progress)</li>
+        </ul>)
+};
+
 export const portfolio = {
     title: "MY PORTFOLIO (THIS WEBSITE)",
     description: `Web app to for a web developer's portfolio`,
