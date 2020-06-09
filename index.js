@@ -6,11 +6,11 @@ window.onload = () => {
         title: "(+351) 920 438 006",
         img: "https://img.icons8.com/color/48/000000/phone.png",
         link: "",
-        text: "Call me"
+        text: "Call me (Portugal)"
     }
 
     const skype = {
-        title: "(+351) 920 438 006",
+        title: "Lourenzo86@outlook.com",
         img: "https://img.icons8.com/color/48/000000/skype.png",
         link: "skype:lourenzo86@outlook.com?chat",
         text: "Chat with me on Skype"
@@ -99,8 +99,12 @@ window.onload = () => {
         sourceText: "See the source code",
         htmlTitle: "Download the ready-to-use software",
         features: [
-            "Register vehicles", "employees", "suppliers",
-            "Register fuel entries", "maintenances", "accidents",
+            "Register vehicles",
+            "Employees",
+            "Suppliers",
+            "Register fuel entries",
+            "Maintenances",
+            "Accidents",
             "Backup data (.csv)"
         ]
 
