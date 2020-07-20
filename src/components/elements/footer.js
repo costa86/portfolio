@@ -3,7 +3,7 @@ import { appendChildren } from "./../helpers";
 export function footerElement() {
     let footer = document.createElement("div");
     footer.id = "footer";
-    footer.innerHTML = "Handcrafted by Lourenço Costa";
+    footer.innerHTML = "Handcrafted by Lourenço Costa, with:";
     let img1 = document.createElement("img");
     let img2 = document.createElement("img");
     let img3 = document.createElement("img");
