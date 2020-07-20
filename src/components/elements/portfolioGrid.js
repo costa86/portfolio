@@ -10,6 +10,10 @@ for (let i of projects) {
     let imgMain = document.createElement("img");
     let imgSource = document.createElement("img");
     let imgDemo = document.createElement("img");
+
+    let imgVideo = document.createElement("img");
+    let aVideo = document.createElement("a");
+
     let aDemo = document.createElement("a");
     let aSource = document.createElement("a");
     let pDesc = document.createElement("p");
@@ -30,20 +34,25 @@ for (let i of projects) {
     h3.innerHTML = i.title;
     imgMain.src = i.imgTitle;
     imgDemo.src = i.imgDemo;
-    imgDemo.className = imgSource.className = "imgPlus";
+    imgDemo.className = imgSource.className = imgVideo.className = "imgPlus";
+    imgVideo.title = i.alt = i.videoText;
     imgDemo.title = i.htmlTitle;
     imgSource.src = i.imgSource;
     imgSource.title = i.sourceText;
     aSource.href = i.source;
     aDemo.href = i.demo;
-    aSource.target = aDemo.target = "_blank";
+    aVideo.href = i.videoUrl;
+    aSource.target = aDemo.target = aVideo.target = "_blank";
+    imgVideo.src = i.videoImg;
 
     aSource.appendChild(imgSource);
     aDemo.appendChild(imgDemo);
+    aVideo.appendChild(imgVideo);
+
 
     appendChildren(div, imgMain, h3, pDesc, document.createElement("hr"),
         pStack, document.createElement("hr"), ulFeatures, document.createElement("hr"),
-        aDemo, aSource
+        aDemo, aSource,aVideo
     )
 
     portfolioGrid.appendChild(div);
