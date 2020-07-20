@@ -84,7 +84,7 @@ const portfolio = {
         `Portfolio for a web developer`,
     stack: "JavaScript, WebPack, HTML, CSS, SASS",
     demo: "http://www.costa86.com",
-    source: "https://gist.github.com/costa86/9fef1fc6129c9fe0c7af04b1e33abc29",
+    source: "https://github.com/costa86/portfolio",
     imgDemo: "https://img.icons8.com/color/60/000000/internet.png",
     imgSource: githubIcon,
     imgTitle: "https://img.icons8.com/dusk/48/000000/webpack.png",
