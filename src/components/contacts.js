@@ -1,4 +1,4 @@
-export const phone = {
+const phone = {
     title: "(+351) 920 438 006",
     img: "https://img.icons8.com/color/48/000000/phone.png",
     link: "",
@@ -37,4 +37,6 @@ const github = {
     text: "Check out my GitHub repository"
 
 }
+
+export const contacts = [phone, skype, email, linkedin];
 
