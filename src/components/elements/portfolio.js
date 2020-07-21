@@ -26,11 +26,11 @@ export function portfolioElement() {
     par4.style.fontWeight = "bolder";
     title.innerHTML = "PORTFOLIO";
     title.className = "sticky";
-    par1.innerHTML = `Here you can check some of my work, as some curated projects.`;
-    par3.innerHTML = "Are you an IT professional? Check the source code";
-    par4.innerHTML = "Are you a recruiter/HR professional? Try out the softwares or watch the video-demonstrations";
+    par1.innerHTML = `Here you can get to know my work, as some curated projects.`;
+    par3.innerHTML = "Are you an IT professional? Check the source code.";
+    par4.innerHTML = "Are you a recruiter/HR professional? Try out the softwares or watch the video-demonstrations.";
 
-    par2.innerHTML = "On the button below, you can check my github repository for all the projects";
+    par2.innerHTML = "Alternatively, on the button below you can see my GitHub repository for all the projects:";
     appendChildren(portfolio, title, par1, par4, par3, par2, a, portfolioGrid);
     return portfolio;
 }

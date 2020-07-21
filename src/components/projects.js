@@ -32,6 +32,8 @@ const barcode = {
         "Redirects to product page on the online store",
     ],
     videoImg: iconNA,
+    hasVideo: false,
+    hasDemo: true,
     videoUrl: "#",
     videoText: "Video not available. You can download the app"
 };
@@ -54,7 +56,9 @@ const sgfJava = {
     ],
     videoImg: iconVideo,
     videoUrl: "https://share.vidyard.com/watch/iDbowZtirvpyzL8umf5TTf?",
-    videoText: videoText
+    videoText: videoText,
+    hasVideo: true,
+    hasDemo: true
 
 };
 
@@ -77,8 +81,9 @@ const reactAPI = {
     ],
     videoImg: iconVideo,
     videoUrl: "https://share.vidyard.com/watch/FFPuX2ERuAoqiV9QDFixXN?",
-    videoText: videoText
-
+    videoText: videoText,
+    hasVideo: true,
+    hasDemo: true
 };
 
 const upholdClone = {
@@ -101,7 +106,9 @@ const upholdClone = {
     ],
     videoImg: iconVideo,
     videoUrl: "https://share.vidyard.com/watch/m8wJe5jLH91bwfc8Wmyg2w?",
-    videoText: videoText
+    videoText: videoText,
+    hasVideo: true,
+    hasDemo: false
 
 };
 
@@ -124,7 +131,9 @@ const hackaton = {
     ],
     videoImg: iconNA,
     videoUrl: "#",
-    videoText: "No video for this. See the tableau visualization"
+    videoText: "No video for this. See the tableau visualization",
+    hasVideo: false,
+    hasDemo: true
 
 };
 
@@ -145,8 +154,9 @@ const portfolio = {
     ],
     videoImg: iconNA,
     videoUrl: "#",
-    videoText: "Video not necessary (you are here)"
-
+    videoText: "Video not necessary (you are here)",
+    hasDemo: false,
+    hasVideo: false
 };
 
 

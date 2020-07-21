@@ -5,6 +5,8 @@ export let portfolioGrid = document.createElement("div");
 portfolioGrid.id = "portfolio-grid";
 
 for (let i of projects) {
+    let extra = [];
+
     let div = document.createElement("div");
     let h3 = document.createElement("h3");
     let imgMain = document.createElement("img");
@@ -49,11 +51,14 @@ for (let i of projects) {
     aDemo.appendChild(imgDemo);
     aVideo.appendChild(imgVideo);
 
+    i.hasDemo && extra.push(aDemo);
+    i.hasVideo && extra.push(aVideo);
+    extra.push(aSource);
 
     appendChildren(div, imgMain, h3, pDesc, document.createElement("hr"),
         pStack, document.createElement("hr"), ulFeatures, document.createElement("hr"),
-        aDemo, aSource,aVideo
-    )
+        ...extra
+    );
 
     portfolioGrid.appendChild(div);
 
