@@ -1,6 +1,13 @@
+import iconPhone from "./../assets/icons/phone.png";
+import iconSkype from "./../assets/icons/skype.png";
+import iconEmail from "./../assets/icons/email.png";
+import iconLindedin from "./../assets/icons/linkedin.png";
+import iconGithub from "./../assets/icons/github.png";
+
+
 const phone = {
     title: "(+351) 920 438 006",
-    img: "https://img.icons8.com/color/48/000000/phone.png",
+    img: iconPhone,
     link: "",
     text: "Call me"
 
@@ -8,7 +15,7 @@ const phone = {
 
 const skype = {
     title: "(+351) 920 438 006",
-    img: "https://img.icons8.com/color/48/000000/skype.png",
+    img: iconSkype,
     link: "skype:lourenzo86@outlook.com?chat",
     text: "Chat with me on Skype"
 
@@ -16,7 +23,7 @@ const skype = {
 
 const email = {
     title: "costa86@zoho.com",
-    img: "https://img.icons8.com/color/48/000000/email.png",
+    img: iconEmail,
     link: "mailto:costa86@zoho.com/",
     text: "Send me an email"
 
@@ -24,7 +31,7 @@ const email = {
 
 const linkedin = {
     title: "linkedin.com/in/costa86",
-    img: "https://img.icons8.com/color/48/000000/linkedin.png",
+    img: iconLindedin,
     link: "https://www.linkedin.com/in/costa86/",
     text: "Connect with me on LinkedIn"
 
@@ -32,7 +39,7 @@ const linkedin = {
 
 const github = {
     title: "github.com/costa86",
-    img: "https://img.icons8.com/material-outlined/48/000000/github.png",
+    img: iconGithub,
     link: "https://github.com/costa86",
     text: "Check out my GitHub repository"
 

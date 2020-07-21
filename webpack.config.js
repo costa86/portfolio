@@ -3,14 +3,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.html"
+            template: "./src/index.html",
+            favicon: "./src/assets/icons/favicon.png",
         })
     ],
     module: {
         rules: [
             {
                 test: /\.(png|jpeg|jpeg|svg|gif)$/,
-                use: ["file-loader"]
+                use: ["url-loader"]
             },
             {
                 test: /\.scss$/,

@@ -1,5 +1,10 @@
 import { appendChildren } from "./../helpers";
 
+import iconJS from "./../../assets/icons/javascript.png";
+import iconWebpack from "./../../assets/icons/webpack.png";
+import iconSASS from "./../../assets/icons/sass.png";
+
+
 export function footerElement() {
     let footer = document.createElement("div");
     footer.id = "footer";
@@ -11,11 +16,11 @@ export function footerElement() {
     let br = document.createElement("br");
 
     img1.title = img1.alt = "JavaScript (nothing fancy, just DOM stuff)";
-    img2.title = img2.alt = "SASS (Grid is awesome!)";
+    img2.title = img2.alt = "SASS (CSS Grid is awesome!)";
     img3.title = img3.alt = "WebPack";
-    img1.src = "https://img.icons8.com/color/48/000000/javascript.png";
-    img2.src = "https://img.icons8.com/color/48/000000/sass.png"
-    img3.src = "https://img.icons8.com/dusk/48/000000/webpack.png";
+    img1.src = iconJS;
+    img2.src = iconSASS
+    img3.src = iconWebpack;
     appendChildren(footer, br, img1, img3, img2);
     return footer;
 }
