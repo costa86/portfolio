@@ -21,7 +21,6 @@ $main-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 #nav {
 	grid-area: nav;
 	background-image: $main-back;
-	position: fixed;
 
 	width: 100%;
 	text-align: right;
@@ -43,6 +42,7 @@ $main-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 	padding: 5px;
 	text-align: center;
 }
+
 
 .sticky {
 	position: sticky;
@@ -85,9 +85,8 @@ $main-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #contact {
-  grid-area: contact;
+	grid-area: contact;
 	text-align: center;
-
 }
 
 #footer {
@@ -134,5 +133,37 @@ button {
 	}
 	img {
 		float: left;
+	}
+}
+
+#menu {
+	display: none;
+	cursor: pointer;
+}
+
+.nav-hidden {
+	left: -100%;
+}
+
+.nav-shown {
+	left: 0%;
+}
+
+@media (max-width: 500px) {
+	#nav {
+		transition: 0.5s;
+		position: fixed;
+		z-index: 1;
+		text-align: center;
+		a {
+			display: block;
+		}
+	}
+	#menu {
+		display: block;
+		position: fixed;
+		top: 3%;
+		right: 5%;
+		display: block;
 	}
 }
