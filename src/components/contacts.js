@@ -14,7 +14,7 @@ const phone = {
 }
 
 const skype = {
-    title: "(+351) 920 438 006",
+    title: "lourenzo86@outlook.com",
     img: iconSkype,
     link: "skype:lourenzo86@outlook.com?chat",
     text: "Chat with me on Skype"
