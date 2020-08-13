@@ -9,6 +9,8 @@ import iconWebsite from "./../assets/icons/website.png";
 import iconTableau from "./../assets/icons/tableau.png";
 import iconWebpack from "./../assets/icons/webpack.png";
 import iconNA from "./../assets/icons/na.png";
+import iconDocker from "./../assets/icons/docker.png";
+
 
 const videoText = "Watch short video for this project";
 
@@ -159,6 +161,28 @@ const portfolio = {
     hasVideo: false
 };
 
+const docker = {
+    title: "DJANGO APP WITH DOCKER",
+    description:
+        `Web app built with Python + Django + PostgreSQL, and containarized with Docker`,
+    stack: "Python, Django, Docker, Bash Scripting, PostgreSQL, SQLite, HTML, CSS, SASS",
+    demo: "http://www.costa86.com",
+    source: "https://github.com/costa86/django_docker",
+    imgDemo: iconDocker,
+    imgSource: iconGithub,
+    imgTitle: iconDocker,
+    htmlTitle: "See the website",
+    sourceText: "Source code for my portfolio website",
+    features: [
+        "Automated processes with bash scripts",
+    ],
+    videoImg: iconNA,
+    videoUrl: "#",
+    videoText: "Video not necessary (you are here)",
+    hasDemo: false,
+    hasVideo: false
+};
 
 
-export let projects = [barcode, sgfJava, reactAPI, hackaton, portfolio, upholdClone];
+
+export let projects = [docker,barcode, sgfJava, reactAPI, hackaton, portfolio, upholdClone];
