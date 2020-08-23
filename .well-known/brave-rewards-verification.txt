@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: costa86.com
+Token: 75edb87076b8499fd6affc40f6f662d2cd94bf62f31a36e3dd2d87c24ba7368c
