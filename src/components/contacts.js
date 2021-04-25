@@ -45,5 +45,13 @@ const github = {
 
 }
 
-export const contacts = [phone, skype, email, linkedin];
+const devTo = {
+    title: "dev.to/costa86",
+    img: iconGithub,
+    link: "https://dev.to/costa86",
+    text: "Check some articles I have written"
+
+}
+
+export const contacts = [phone, skype, email, linkedin,devTo];
 
