@@ -32,12 +32,12 @@ function createPortfolioCard(stack, h2, p, features, imageMap = {}) {
         let title = gitHub.title;
 
         if (i === "android") {
-            img = "google-play-48.png";
+            img = "./images/google-play-48.png";
             alt = "Google Play";
             title = "Download this app on Google Play";
         }
         else if (i === "article") {
-            img = "article-48.png";
+            img = "./images/article-48.png";
             alt = "Article";
             title = "Read an article about this project";
         }
@@ -113,7 +113,7 @@ function createAnchorWithImage(href, src, alt, title) {
 let portfolioGrid = document.getElementById("portfolio-grid");
 
 let gitHub = {
-    "img": "github-48.png",
+    "img": "./images/github-48.png",
     "alt": "GitHub",
     "title": "Check the source code"
 }
@@ -132,7 +132,12 @@ let barcodeImages = {
     "github": "https://github.com/costa86/BarcodePrice",
     "android": "https://play.google.com/store/apps/details?id=com.costa86.barcodeprice"
 };
-let barcodePriceDownload = createAnchorWithImage("https://play.google.com/store/apps/details?id=com.costa86.barcodeprice", "google-play-48.png", "Google Play", "Download this app on Google Play");
+let barcodePriceDownload = createAnchorWithImage(
+    "https://play.google.com/store/apps/details?id=com.costa86.barcodeprice", 
+    "./images/google-play-48.png", 
+    "Google Play", 
+    "Download this app on Google Play"
+);
 let barcodePriceStack = ["Java", "Android", "SQLite"];
 let barcodePriceFeatures = [
     "Saves user's coordenates",
@@ -184,11 +189,11 @@ portfolioGrid.appendChild(barcodePriceProject);
 portfolioGrid.appendChild(missingPeopleProject);
 portfolioGrid.appendChild(movieSearchProject);
 
-addContactCard("Drop me an email", "email-48.png", "Email", "mailto:costa86@zoho.com", "costa86@zoho.com");
-addContactCard("Give me a call (whatsapp and signal)", "phone-48.png", "Phone", "tel:+351920438006", "(+351) 920 438 006");
-addContactCard("Add me on LinkedIn", "linkedin-48.png", "LinkedIn", "https://www.linkedin.com/in/costa86/", "linkedin.com/in/costa86");
-addContactCard("Check all my projects", "github-48.png", "GitHub", "https://github.com/costa86", "github.com/costa86");
-addContactCard("See my articles on dev.to", "article-48.png", "Articles", "https://dev.to/costa86", "dev.to/costa86");
+addContactCard("Drop me an email", "./images/email-48.png", "Email", "mailto:costa86@zoho.com", "costa86@zoho.com");
+addContactCard("Give me a call (whatsapp and signal)", "./images/phone-48.png", "Phone", "tel:+351920438006", "(+351) 920 438 006");
+addContactCard("Add me on LinkedIn", "./images/linkedin-48.png", "LinkedIn", "https://www.linkedin.com/in/costa86/", "linkedin.com/in/costa86");
+addContactCard("Check all my projects", "./images/github-48.png", "GitHub", "https://github.com/costa86", "github.com/costa86");
+addContactCard("See my articles on dev.to", "./images/article-48.png", "Articles", "https://dev.to/costa86", "dev.to/costa86");
 
 let goToTopIcon = document.getElementById("goToTop");
 
