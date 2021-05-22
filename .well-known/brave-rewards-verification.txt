@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: costa86.com
-Token: ${{ secrets.BRAVE_TOKEN }}
