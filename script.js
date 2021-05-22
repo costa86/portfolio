@@ -199,8 +199,10 @@ let goToTopIcon = document.getElementById("goToTop");
 
 function scrollFunction() {
     let limit = 20;
+    let checkBox = document.getElementById("check");
     if (document.body.scrollTop > limit || document.documentElement.scrollTop > limit) {
         goToTop.style.display = "block";
+        checkBox.checked = false;
     } else {
         goToTop.style.display = "none";
     }
