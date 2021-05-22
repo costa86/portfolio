@@ -183,7 +183,7 @@ let missingPeopleProject = createPortfolioCard(
 );
 //
 
-// React movie search
+// Movie search
 let movieSearchImages = {
     "github": "https://github.com/costa86/react-api",
     "live":"https://costa86.github.io/react-api",
@@ -193,8 +193,8 @@ let movieSearchStack = ["HTML + CSS + SASS", "JavaScript + React"];
 let movieSearchFeatures = ["Search for a movie/serie.", "See list of results.", "See each movie's details page."];
 let movieSearchProject = createPortfolioCard(
     movieSearchStack,
-    "REACT WITH API FETCH",
-    "Web app to search and display information about movies. The data is obtained from an API",
+    "MOVIE SEARCH",
+    "Web app to search and display information about movies, TV shows and games. The data is obtained from an API",
     movieSearchFeatures,
     movieSearchImages
 );
