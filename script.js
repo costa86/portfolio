@@ -26,17 +26,17 @@ function createPortfolioCard(stack, h2, p, features, imageMap = {}) {
     let featuresElem = document.createElement("h4");
     let stackElem = document.createElement("h4");
 
-    for (let i in imageMap){
+    for (let i in imageMap) {
         let img = gitHub.img;
         let alt = gitHub.alt;
         let title = gitHub.title;
 
-        if (i === "android"){
+        if (i === "android") {
             img = "google-play-48.png";
             alt = "Google Play";
             title = "Download this app on Google Play";
         }
-        else if (i === "article"){
+        else if (i === "article") {
             img = "article-48.png";
             alt = "Article";
             title = "Read an article about this project";
@@ -47,7 +47,7 @@ function createPortfolioCard(stack, h2, p, features, imageMap = {}) {
 
     }
 
-    
+
     div.appendChild(createAnyElement("hr"));
 
     featuresElem.innerHTML = "FEATURES:";
@@ -82,9 +82,9 @@ function createPortfolioCard(stack, h2, p, features, imageMap = {}) {
     div.appendChild(createAnyElement("br"));
     div.appendChild(stackElem);
     div.appendChild(createAnyElement("br"));
-    
+
     div.appendChild(ul);
-    
+
     div.appendChild(createAnyElement("br"));
     div.appendChild(createAnyElement("hr"));
     div.appendChild(createAnyElement("br"));
@@ -112,37 +112,37 @@ function createAnchorWithImage(href, src, alt, title) {
 
 let portfolioGrid = document.getElementById("portfolio-grid");
 
-let gitHub= {
-    "img":"github-48.png",
-    "alt":"GitHub",
-    "title":"Check the source code"
+let gitHub = {
+    "img": "github-48.png",
+    "alt": "GitHub",
+    "title": "Check the source code"
 }
 
 // Django with docker
 let djangoImages = {
-    "github":"https://github.com/costa86/django_docker"
+    "github": "https://github.com/costa86/django_docker"
 };
 
 let djangoStack = ["Python + Django", "HTML + CSS + SASS", "Bash", "Docker", "PostgreSQL + SQLite"];
 let djangoFeatures = ["Automated processes with bash"];
-let djangoProject = createPortfolioCard(djangoStack, "DJANGO APP WITH DOCKER", "Containarized full stack web app", djangoFeatures,djangoImages);
+let djangoProject = createPortfolioCard(djangoStack, "DJANGO APP WITH DOCKER", "Containarized full stack web app", djangoFeatures, djangoImages);
 
 // Barcode price checker
 let barcodeImages = {
-    "github":"https://github.com/costa86/BarcodePrice",
-    "android":"https://play.google.com/store/apps/details?id=com.costa86.barcodeprice"
+    "github": "https://github.com/costa86/BarcodePrice",
+    "android": "https://play.google.com/store/apps/details?id=com.costa86.barcodeprice"
 };
 let barcodePriceDownload = createAnchorWithImage("https://play.google.com/store/apps/details?id=com.costa86.barcodeprice", "google-play-48.png", "Google Play", "Download this app on Google Play");
 let barcodePriceStack = ["Java", "Android", "SQLite"];
 let barcodePriceFeatures = [
-    "Saves user's coordenates", 
+    "Saves user's coordenates",
     "Navigates to the place where the product was scanned",
     "Shares the product search result via sms, email, social media, etc",
     "Redirects to product page on the online store"
 ];
 let barcodePriceProject = createPortfolioCard(
-    barcodePriceStack, 
-    "BARCODE PRICE CHECKER", "Native Android mobile app that scans products' barcodes and finds better deals for them on online stores", 
+    barcodePriceStack,
+    "BARCODE PRICE CHECKER", "Native Android mobile app that scans products' barcodes and finds better deals for them on online stores",
     barcodePriceFeatures,
     barcodeImages
 );
@@ -150,15 +150,15 @@ let barcodePriceProject = createPortfolioCard(
 
 // Missing people finder
 let missingPeopleImages = {
-    "github":"https://github.com/costa86/tracking",
-    "article":"https://dev.to/costa86/finding-mission-people-with-31-lines-of-javascript-3l2g"
+    "github": "https://github.com/costa86/tracking",
+    "article": "https://dev.to/costa86/finding-mission-people-with-31-lines-of-javascript-3l2g"
 };
 let missingPeopleStack = ["JavaScript", "HTML + CSS",];
-let missingPeopleFeatures = ["Page is opened with QR code","Secretly sends email with latitude and longitude via email"];
+let missingPeopleFeatures = ["Page is opened with QR code", "Secretly sends email with latitude and longitude via email"];
 let missingPeopleProject = createPortfolioCard(
-    missingPeopleStack, 
-    "MISSING PEOPLE FINDER", 
-    "Web page designed to help finding missing people", 
+    missingPeopleStack,
+    "MISSING PEOPLE FINDER",
+    "Web page designed to help finding missing people",
     missingPeopleFeatures,
     missingPeopleImages
 );
@@ -166,14 +166,14 @@ let missingPeopleProject = createPortfolioCard(
 
 // React movie search
 let movieSearchImages = {
-    "github":"https://github.com/costa86/react-api",
+    "github": "https://github.com/costa86/react-api",
 };
-let movieSearchStack = ["HTML + CSS","JavaScript + React"];
-let movieSearchFeatures = ["Search for a movie/serie","See list of results","See each movie's details page"];
+let movieSearchStack = ["HTML + CSS", "JavaScript + React"];
+let movieSearchFeatures = ["Search for a movie/serie", "See list of results", "See each movie's details page"];
 let movieSearchProject = createPortfolioCard(
-    movieSearchStack, 
-    "REACT WITH API FETCH", 
-    "Web app to search and display information about movies. The data is obtained from an API", 
+    movieSearchStack,
+    "REACT WITH API FETCH",
+    "Web app to search and display information about movies. The data is obtained from an API",
     movieSearchFeatures,
     movieSearchImages
 );
@@ -190,3 +190,21 @@ addContactCard("Add me on LinkedIn", "linkedin-48.png", "LinkedIn", "https://www
 addContactCard("Check all my projects", "github-48.png", "GitHub", "https://github.com/costa86", "github.com/costa86");
 addContactCard("See my articles on dev.to", "article-48.png", "Articles", "https://dev.to/costa86", "dev.to/costa86");
 
+let goToTopIcon = document.getElementById("goToTop");
+
+function scrollFunction() {
+    let limit = 20;
+    if (document.body.scrollTop > limit || document.documentElement.scrollTop > limit) {
+        goToTop.style.display = "block";
+    } else {
+        goToTop.style.display = "none";
+    }
+}
+
+function goUp(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;  
+}
+
+window.onscroll = () => scrollFunction();
+goToTopIcon.onclick = () => goUp();
