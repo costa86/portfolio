@@ -7,6 +7,7 @@
     --hover-color:yellow;
 }
 
+
 img{
     transition: .5s;
     margin: 5px;
@@ -79,8 +80,8 @@ nav a:hover{
 
 .card-grid{
     display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 10px;
     justify-content: center;
     white-space: pre-wrap;
@@ -97,7 +98,6 @@ nav a:hover{
 }
 
 .contact-card{
-    padding: 10px;
     display: flex;    
     align-items:center;
     justify-content: space-evenly;
@@ -122,6 +122,10 @@ nav a:hover{
         text-align: center;
         left: -100%;
         transition: .5s;
+    }
+    .card,.contact-card{
+        margin-left: 8%;
+        margin-right: 8%;
     }
 
     #links a{

@@ -41,7 +41,21 @@ function createPortfolioCard(stack, h2, p, features, imageMap = {}) {
             alt = "Article";
             title = "Read an article about this project";
         }
-
+        else if (i === "video") {
+            img = "./images/play-48.png";
+            alt = "Video";
+            title = "Watch a video demonstration of this project";
+        }
+        else if (i === "live") {
+            img = "./images/web-48.png";
+            alt = "Live";
+            title = "See this this project in action";
+        }
+        else if (i === "download") {
+            img = "./images/download-48.png";
+            alt = "Download";
+            title = "Download this project";
+        }
         let image = createAnchorWithImage(imageMap[i], img, alt, title);
         div.appendChild(image);
 
@@ -124,7 +138,7 @@ let djangoImages = {
 };
 
 let djangoStack = ["Python + Django", "HTML + CSS + SASS", "Bash", "Docker", "PostgreSQL + SQLite"];
-let djangoFeatures = ["Automated processes with bash"];
+let djangoFeatures = ["Automated processes with bash."];
 let djangoProject = createPortfolioCard(djangoStack, "DJANGO APP WITH DOCKER", "Containarized full stack web app", djangoFeatures, djangoImages);
 
 // Barcode price checker
@@ -140,10 +154,10 @@ let barcodePriceDownload = createAnchorWithImage(
 );
 let barcodePriceStack = ["Java", "Android", "SQLite"];
 let barcodePriceFeatures = [
-    "Saves user's coordenates",
-    "Navigates to the place where the product was scanned",
-    "Shares the product search result via sms, email, social media, etc",
-    "Redirects to product page on the online store"
+    "Saves user's coordenates.",
+    "Navigates to the place where the product was scanned.",
+    "Shares the product search result via sms, email, social media, etc.",
+    "Redirects to product page on the online store."
 ];
 let barcodePriceProject = createPortfolioCard(
     barcodePriceStack,
@@ -159,7 +173,7 @@ let missingPeopleImages = {
     "article": "https://dev.to/costa86/finding-mission-people-with-31-lines-of-javascript-3l2g"
 };
 let missingPeopleStack = ["JavaScript", "HTML + CSS",];
-let missingPeopleFeatures = ["Page is opened with QR code", "Secretly sends email with latitude and longitude via email"];
+let missingPeopleFeatures = ["Page is opened with QR code.", "Secretly sends email with latitude and longitude via email."];
 let missingPeopleProject = createPortfolioCard(
     missingPeopleStack,
     "MISSING PEOPLE FINDER",
@@ -172,9 +186,11 @@ let missingPeopleProject = createPortfolioCard(
 // React movie search
 let movieSearchImages = {
     "github": "https://github.com/costa86/react-api",
+    "live":"https://costa86.github.io/react-api",
+    "video":"https://share.vidyard.com/watch/FFPuX2ERuAoqiV9QDFixXN?"
 };
-let movieSearchStack = ["HTML + CSS", "JavaScript + React"];
-let movieSearchFeatures = ["Search for a movie/serie", "See list of results", "See each movie's details page"];
+let movieSearchStack = ["HTML + CSS + SASS", "JavaScript + React"];
+let movieSearchFeatures = ["Search for a movie/serie.", "See list of results.", "See each movie's details page."];
 let movieSearchProject = createPortfolioCard(
     movieSearchStack,
     "REACT WITH API FETCH",
@@ -184,10 +200,55 @@ let movieSearchProject = createPortfolioCard(
 );
 //
 
+// Uphold
+let upholdImages = {
+    "github": "https://github.com/costa86/uphold_clone",
+    "video":"https://share.vidyard.com/watch/m8wJe5jLH91bwfc8Wmyg2w?"
+};
+let upholdStack = ["HTML + CSS", "JavaScript + React"];
+let upholdFeatures = ["Converts currencies.", "Uses Uphold's API."];
+let upholdProject = createPortfolioCard(
+    upholdStack,
+    "UPHOLD CLONE",
+    "Web app cloning Uphold's interface and functionality, converting currencies by using its API",
+    upholdFeatures,
+    upholdImages
+);
+//
+
+//Geography CDN
+let CDN = "https://cdn.jsdelivr.net/gh/costa86/cdn_geo@1.1/main.min.js";
+
+let geoCDNImages = {
+    "github": "https://github.com/costa86/cdn_geo",
+    "download":CDN,
+    "live":"https://costa86.github.io/cdn_geo/"
+};
+let geoCDNStack = ["JavaScript","jsdelivr.com (creates and version-controls the CDN"];
+let geoCDNFeatures = [
+    "Ready to be inplemented in any HTML document.",
+    "Available in minified mode, so it loads faster.",
+    "Check distance between 2 coordinates.", 
+    "Validates latitude and longitude.",
+    "It is a work in progress (suggestions for new features are welcome)"
+];
+let geoCDNProject = createPortfolioCard(
+    geoCDNStack,
+    "GEO CDN",
+    "A JavaScript CDN (Content Delivery Network) designed to work with geographic data. Check the source code to see how you can use it in your project",
+    geoCDNFeatures,
+    geoCDNImages
+);
+//
+
+
 portfolioGrid.appendChild(djangoProject);
 portfolioGrid.appendChild(barcodePriceProject);
 portfolioGrid.appendChild(missingPeopleProject);
 portfolioGrid.appendChild(movieSearchProject);
+portfolioGrid.appendChild(upholdProject);
+portfolioGrid.appendChild(geoCDNProject);
+
 
 addContactCard("Drop me an email", "./images/email-48.png", "Email", "mailto:costa86@zoho.com", "costa86@zoho.com");
 addContactCard("Give me a call (whatsapp and signal)", "./images/phone-48.png", "Phone", "tel:+351920438006", "(+351) 920 438 006");
