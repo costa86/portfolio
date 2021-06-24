@@ -224,7 +224,7 @@ let geoCDNImages = {
     "download":CDN,
     "live":"https://costa86.github.io/cdn_geo/"
 };
-let geoCDNStack = ["JavaScript","jsdelivr.com (creates and version-controls the CDN"];
+let geoCDNStack = ["JavaScript"];
 let geoCDNFeatures = [
     "Ready to be inplemented in any HTML document.",
     "Available in minified mode, so it loads faster.",
@@ -234,12 +234,34 @@ let geoCDNFeatures = [
 ];
 let geoCDNProject = createPortfolioCard(
     geoCDNStack,
-    "GEO CDN",
+    "GEO JAVASCRIPT CDN",
     "A JavaScript CDN (Content Delivery Network) designed to work with geographic data. Check the source code to see how you can use it in your project",
     geoCDNFeatures,
     geoCDNImages
 );
 //
+
+//Pip package
+
+let pipImages = {
+    "github": "https://github.com/costa86/geographic-worker",
+    "download":"https://pypi.org/project/geographic-worker/"
+};
+let pipStack = ["Python"];
+let pipFeatures = [
+    "install it using pip",
+    "Validates latitude and longitude.",
+    "It is a work in progress (suggestions for new features are welcome)"
+];
+let pipProject = createPortfolioCard(
+    pipStack,
+    "GEO PYTHON PACKAGE",
+    "Python package designed to work with geographic data. Can be installed with 'pip install geographic-worker'",
+    pipFeatures,
+    pipImages
+);
+//
+
 
 
 portfolioGrid.appendChild(djangoProject);
@@ -248,6 +270,7 @@ portfolioGrid.appendChild(missingPeopleProject);
 portfolioGrid.appendChild(movieSearchProject);
 portfolioGrid.appendChild(upholdProject);
 portfolioGrid.appendChild(geoCDNProject);
+portfolioGrid.appendChild(pipProject);
 
 
 addContactCard("Drop me an email", "./images/email-48.png", "Email", "mailto:costa86@zoho.com", "costa86@zoho.com");
