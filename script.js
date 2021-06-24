@@ -245,12 +245,12 @@ let geoCDNProject = createPortfolioCard(
 //Pip package
 let pipImages = {
     "github": "https://github.com/costa86/geographic-worker",
-    "download":"https://pypi.org/project/geographic-worker/"
+    "download":"https://pypi.org/project/geoworker/"
 };
 let pipStack = ["Python"];
 let pipFeatures = [
     "CI/CD pipeline for new releases",
-    "Download: pip install geographic-worker",
+    "Download: pip install geoworker",
     "Validates latitude and longitude."
 ];
 let pipProject = createPortfolioCard(
