@@ -214,6 +214,7 @@ let upholdProject = createPortfolioCard(
     upholdFeatures,
     upholdImages
 );
+
 //
 
 //Geography CDN
@@ -229,8 +230,7 @@ let geoCDNFeatures = [
     "Ready to be inplemented in any HTML document.",
     "Available in minified mode, so it loads faster.",
     "Check distance between 2 coordinates.", 
-    "Validates latitude and longitude.",
-    "It is a work in progress (suggestions for new features are welcome)"
+    "Validates latitude and longitude."
 ];
 let geoCDNProject = createPortfolioCard(
     geoCDNStack,
@@ -239,24 +239,24 @@ let geoCDNProject = createPortfolioCard(
     geoCDNFeatures,
     geoCDNImages
 );
+
 //
 
 //Pip package
-
 let pipImages = {
     "github": "https://github.com/costa86/geographic-worker",
     "download":"https://pypi.org/project/geographic-worker/"
 };
 let pipStack = ["Python"];
 let pipFeatures = [
-    "install it using pip",
-    "Validates latitude and longitude.",
-    "It is a work in progress (suggestions for new features are welcome)"
+    "CI/CD pipeline for new releases",
+    "Download: pip install geographic-worker",
+    "Validates latitude and longitude."
 ];
 let pipProject = createPortfolioCard(
     pipStack,
     "GEO PYTHON PACKAGE",
-    "Python package designed to work with geographic data. Can be installed with 'pip install geographic-worker'",
+    "Python package designed to work with geographic data",
     pipFeatures,
     pipImages
 );
