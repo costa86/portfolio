@@ -132,14 +132,28 @@ let gitHub = {
     "title": "Check the source code"
 }
 
-// Django with docker
-let djangoImages = {
-    "github": "https://github.com/costa86/django_docker"
+// GOT API
+let gotImages = {
+    "github": "https://github.com/costa86/game-of-thrones-api",
+    "video": "https://www.youtube.com/c/DockerIo/videos"
 };
 
-let djangoStack = ["Python + Django", "HTML + CSS + SASS", "Bash", "Docker", "PostgreSQL + SQLite"];
-let djangoFeatures = ["Automated processes with bash."];
-let djangoProject = createPortfolioCard(djangoStack, "DJANGO APP WITH DOCKER", "Containarized full stack web app", djangoFeatures, djangoImages);
+let gotStack = [
+    "Python", 
+    "HTML + CSS", 
+    "Bash", 
+    "Docker", 
+    "Flask", 
+    "MongoDB",
+    "Terraform"
+];
+let gotFeatures = [
+    "Get information for an episode",
+    "CRUD operations for comments of an episode",
+    "Get episodes by rating",
+    "Auto-deploy API to production cloud server with Terraform"
+];
+let gotProject = createPortfolioCard(gotStack, "GAME OF THRONES' API", "Containarized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All Hands #4, on Dec 05, 2021", gotFeatures, gotImages);
 
 // Barcode price checker
 let barcodeImages = {
@@ -147,9 +161,9 @@ let barcodeImages = {
     "android": "https://play.google.com/store/apps/details?id=com.costa86.barcodeprice"
 };
 let barcodePriceDownload = createAnchorWithImage(
-    "https://play.google.com/store/apps/details?id=com.costa86.barcodeprice", 
-    "./images/google-play-48.png", 
-    "Google Play", 
+    "https://play.google.com/store/apps/details?id=com.costa86.barcodeprice",
+    "./images/google-play-48.png",
+    "Google Play",
     "Download this app on Google Play"
 );
 let barcodePriceStack = ["Java", "Android", "SQLite"];
@@ -186,8 +200,8 @@ let missingPeopleProject = createPortfolioCard(
 // Movie search
 let movieSearchImages = {
     "github": "https://github.com/costa86/react-api",
-    "live":"https://costa86.github.io/react-api",
-    "video":"https://share.vidyard.com/watch/FFPuX2ERuAoqiV9QDFixXN?"
+    "live": "https://costa86.github.io/react-api",
+    "video": "https://share.vidyard.com/watch/FFPuX2ERuAoqiV9QDFixXN?"
 };
 let movieSearchStack = ["HTML + CSS + SASS", "JavaScript + React"];
 let movieSearchFeatures = ["Search for a movie/serie.", "See list of results.", "See each movie's details page."];
@@ -203,7 +217,7 @@ let movieSearchProject = createPortfolioCard(
 // Uphold
 let upholdImages = {
     "github": "https://github.com/costa86/uphold_clone",
-    "video":"https://share.vidyard.com/watch/m8wJe5jLH91bwfc8Wmyg2w?"
+    "video": "https://share.vidyard.com/watch/m8wJe5jLH91bwfc8Wmyg2w?"
 };
 let upholdStack = ["HTML + CSS", "JavaScript + React"];
 let upholdFeatures = ["Converts currencies.", "Uses Uphold's API."];
@@ -222,14 +236,14 @@ let CDN = "https://cdn.jsdelivr.net/gh/costa86/cdn_geo@1.1/main.min.js";
 
 let geoCDNImages = {
     "github": "https://github.com/costa86/cdn_geo",
-    "download":CDN,
-    "live":"https://costa86.github.io/cdn_geo/"
+    "download": CDN,
+    "live": "https://costa86.github.io/cdn_geo/"
 };
 let geoCDNStack = ["JavaScript"];
 let geoCDNFeatures = [
     "Ready to be inplemented in any HTML document.",
     "Available in minified mode, so it loads faster.",
-    "Check distance between 2 coordinates.", 
+    "Check distance between 2 coordinates.",
     "Validates latitude and longitude."
 ];
 let geoCDNProject = createPortfolioCard(
@@ -245,7 +259,7 @@ let geoCDNProject = createPortfolioCard(
 //Pip package
 let pipImages = {
     "github": "https://github.com/costa86/geographic-worker",
-    "download":"https://pypi.org/project/geoworker/"
+    "download": "https://pypi.org/project/geoworker/"
 };
 let pipStack = ["Python"];
 let pipFeatures = [
@@ -262,11 +276,30 @@ let pipProject = createPortfolioCard(
 );
 //
 
+//Go CLI
+let goImages = {
+    "github": "https://github.com/costa86/golang-password-vault",
+    "video": "https://asciinema.org/a/EQXk8KpCm4htLxiRUCSjY62eI"
+};
+let goStack = ["Golang"];
+let goFeatures = [
+    "Add a master password",
+    "CLI",
+    "Turn it into a .exe or binary, so the souce code is obfuscated"
+];
+let goProject = createPortfolioCard(
+    goStack,
+    "PASSWORD MANAGER",
+    "CLI to store and retrieve passwords",
+    goFeatures,
+    goImages
+);
+//
 
-
-portfolioGrid.appendChild(djangoProject);
+portfolioGrid.appendChild(goProject);
+portfolioGrid.appendChild(gotProject);
 portfolioGrid.appendChild(barcodePriceProject);
-portfolioGrid.appendChild(missingPeopleProject);
+// portfolioGrid.appendChild(missingPeopleProject);
 portfolioGrid.appendChild(movieSearchProject);
 portfolioGrid.appendChild(upholdProject);
 portfolioGrid.appendChild(geoCDNProject);
@@ -292,9 +325,9 @@ function scrollFunction() {
     }
 }
 
-function goUp(){
+function goUp() {
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;  
+    document.documentElement.scrollTop = 0;
 }
 
 window.onscroll = () => scrollFunction();
