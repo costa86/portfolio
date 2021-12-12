@@ -285,7 +285,7 @@ let goStack = ["Golang"];
 let goFeatures = [
     "Add a master password",
     "CLI",
-    "Turn it into a .exe or binary, so the souce code is obfuscated"
+    "Turn it into a .exe or binary, so the source code is obfuscated"
 ];
 let goProject = createPortfolioCard(
     goStack,
