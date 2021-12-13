@@ -151,9 +151,16 @@ let gotFeatures = [
     "Get information for an episode",
     "CRUD operations for comments of an episode",
     "Get episodes by rating",
-    "Auto-deploy API to production cloud server with Terraform"
+    "Auto-deploy API to production cloud server with Terraform",
+    "API Documentation available at: https://documenter.getpostman.com/view/18638297/UVJhDEuV"
 ];
-let gotProject = createPortfolioCard(gotStack, "GAME OF THRONES' API", "Containarized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All Hands #4, on Dec 05, 2021", gotFeatures, gotImages);
+
+let gotProject = createPortfolioCard(
+    gotStack, 
+    "GAME OF THRONES' API", 
+    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All Hands #4, on Dec 05, 2021", 
+    gotFeatures, gotImages
+);
 
 // Barcode price checker
 let barcodeImages = {
