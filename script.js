@@ -303,7 +303,27 @@ let goProject = createPortfolioCard(
 );
 //
 
+//Go Shecret
+let shecretImages = {
+    "github": "https://github.com/costa86/go-ssh",
+};
+let shecretStack = ["Golang"];
+let shecretFeatures = [
+    "Start SSH connection",
+    "Start SFTP connection",
+    "Create SSH keys"
+];
+let shecretProject = createPortfolioCard(
+    shecretStack,
+    "SHECRET",
+    "SSH and SFTP Client",
+    shecretFeatures,
+    shecretImages
+);
+//
+
 portfolioGrid.appendChild(goProject);
+portfolioGrid.appendChild(shecretProject);
 portfolioGrid.appendChild(gotProject);
 portfolioGrid.appendChild(barcodePriceProject);
 // portfolioGrid.appendChild(missingPeopleProject);
