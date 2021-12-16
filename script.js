@@ -135,7 +135,7 @@ let gitHub = {
 // GOT API
 let gotImages = {
     "github": "https://github.com/costa86/game-of-thrones-api",
-    "video": "https://www.youtube.com/c/DockerIo/videos"
+    "video": "https://www.youtube.com/watch?v=fy6pXminRLU"
 };
 
 let gotStack = [
@@ -158,7 +158,7 @@ let gotFeatures = [
 let gotProject = createPortfolioCard(
     gotStack, 
     "GAME OF THRONES' API", 
-    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All Hands #4, on Dec 05, 2021", 
+    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All-Hands #4, on Dec 05, 2021 (check the video)", 
     gotFeatures, gotImages
 );
 
