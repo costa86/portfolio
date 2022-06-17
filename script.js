@@ -157,8 +157,8 @@ let gotFeatures = [
 
 let gotProject = createPortfolioCard(
     gotStack, 
-    "GAME OF THRONES' API", 
-    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All-Hands #4, on Dec 05, 2021 (check the video)", 
+    "GAME OF THRONES API", 
+    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All-Hands #4, on Dec 09, 2021 (check the video)", 
     gotFeatures, gotImages
 );
 
@@ -303,6 +303,25 @@ let goProject = createPortfolioCard(
 );
 //
 
+
+//Go json-parser
+let jsonParserImages = {
+    "github": "https://github.com/costa86/json-parser",
+    "download": "https://github.com/costa86/json-parser/blob/master/json-parser"
+};
+let jsonParserStack = ["Rust"];
+let jsonParserFeatures = [
+    "Parse json files"
+];
+let jsonParserProject = createPortfolioCard(
+    jsonParserStack,
+    "JSON PARSER",
+    "CLI to parse json files",
+    jsonParserFeatures,
+    jsonParserImages
+);
+//
+
 //Go Shecret
 let shecretImages = {
     "github": "https://github.com/costa86/go-ssh",
@@ -322,14 +341,15 @@ let shecretProject = createPortfolioCard(
 );
 //
 
+portfolioGrid.appendChild(jsonParserProject);
 portfolioGrid.appendChild(goProject);
 portfolioGrid.appendChild(shecretProject);
 portfolioGrid.appendChild(gotProject);
-portfolioGrid.appendChild(barcodePriceProject);
+// portfolioGrid.appendChild(barcodePriceProject);
 // portfolioGrid.appendChild(missingPeopleProject);
 portfolioGrid.appendChild(movieSearchProject);
 portfolioGrid.appendChild(upholdProject);
-portfolioGrid.appendChild(geoCDNProject);
+// portfolioGrid.appendChild(geoCDNProject);
 portfolioGrid.appendChild(pipProject);
 
 
