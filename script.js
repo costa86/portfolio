@@ -1,3 +1,5 @@
+const STANDALONE = "Standalone executable project. Just run it without installing any dependencies"
+
 function addContactCard(title, src, alt, href, html) {
     let target = document.getElementById("contact-grid");
     let div = document.createElement("div");
@@ -304,14 +306,15 @@ let goProject = createPortfolioCard(
 //
 
 
-//Go json-parser
+//Rust json-parser
 let jsonParserImages = {
     "github": "https://github.com/costa86/json-parser",
     "download": "https://github.com/costa86/json-parser/blob/master/json-parser"
 };
 let jsonParserStack = ["Rust"];
 let jsonParserFeatures = [
-    "Parse json files"
+    "Parse json files",
+    STANDALONE
 ];
 let jsonParserProject = createPortfolioCard(
     jsonParserStack,
@@ -319,6 +322,27 @@ let jsonParserProject = createPortfolioCard(
     "CLI to parse json files",
     jsonParserFeatures,
     jsonParserImages
+);
+//
+
+
+//Rust SQL to-do
+let toDoImages = {
+    "github": "https://github.com/costa86/rust-to-do-with-sql",
+    "download": "https://github.com/costa86/rust-to-do-with-sql/blob/master/tasks"
+};
+let toDoStack = ["Rust","SQLite"];
+let toDoFeatures = [
+    "List, add, delete and edit activities in a table format",
+    "Activities are stored on SQL database",
+    STANDALONE
+];
+let toDoProject = createPortfolioCard(
+    toDoStack,
+    "MY ACTIVITY LIST",
+    "CLI to manage a to-do list",
+    toDoFeatures,
+    toDoImages
 );
 //
 
@@ -342,15 +366,16 @@ let shecretProject = createPortfolioCard(
 //
 
 portfolioGrid.appendChild(jsonParserProject);
+portfolioGrid.appendChild(toDoProject);
 portfolioGrid.appendChild(goProject);
 portfolioGrid.appendChild(shecretProject);
 portfolioGrid.appendChild(gotProject);
-// portfolioGrid.appendChild(barcodePriceProject);
-// portfolioGrid.appendChild(missingPeopleProject);
 portfolioGrid.appendChild(movieSearchProject);
 portfolioGrid.appendChild(upholdProject);
+// portfolioGrid.appendChild(barcodePriceProject);
+// portfolioGrid.appendChild(missingPeopleProject);
 // portfolioGrid.appendChild(geoCDNProject);
-portfolioGrid.appendChild(pipProject);
+// portfolioGrid.appendChild(pipProject);  
 
 
 addContactCard("Drop me an email", "./images/email-48.png", "Email", "mailto:costa86@zoho.com", "costa86@zoho.com");
