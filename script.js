@@ -160,7 +160,7 @@ let gotFeatures = [
 let gotProject = createPortfolioCard(
     gotStack, 
     "GAME OF THRONES API", 
-    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was presented at Docker All-Hands #4, on Dec 09, 2021 (check the video)", 
+    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was featured at Docker All-Hands #4, on Dec 09, 2021 (check the video)", 
     gotFeatures, gotImages
 );
 
@@ -346,15 +346,39 @@ let toDoProject = createPortfolioCard(
 );
 //
 
-//Go Shecret
-let shecretImages = {
-    "github": "https://github.com/costa86/go-ssh",
+//Rust GitAuto
+let gitAutoImages = {
+    "github": "https://github.com/costa86/autogit",
+    "download": "https://github.com/costa86/autogit/blob/main/autogit"
 };
-let shecretStack = ["Golang"];
+let gitAutoStack = ["Rust"];
+let gitAutoFeatures = [
+    "List repositories",
+    "Create repository",
+    "Delete repository",
+    STANDALONE
+];
+let gitAutoProject = createPortfolioCard(
+    gitAutoStack,
+    "AUTOGIT",
+    "CLI to automate operations on GitHub using its API",
+    gitAutoFeatures,
+    gitAutoImages
+);
+//
+
+//Shecret
+let shecretImages = {
+    "github": "https://github.com/costa86/shecret",
+    "download":"https://github.com/costa86/shecret/blob/master/shecret",
+    "video":"https://asciinema.org/a/gWB0W7h4BER9Raaq4DzpNEsYk"
+};
+let shecretStack = ["Rust","SQLite"];
 let shecretFeatures = [
     "Start SSH connection",
     "Start SFTP connection",
-    "Create SSH keys"
+    "Create SSH keys",
+    "List connections"
 ];
 let shecretProject = createPortfolioCard(
     shecretStack,
@@ -365,13 +389,15 @@ let shecretProject = createPortfolioCard(
 );
 //
 
+portfolioGrid.appendChild(gitAutoProject);
+portfolioGrid.appendChild(shecretProject);
 portfolioGrid.appendChild(jsonParserProject);
 portfolioGrid.appendChild(toDoProject);
 portfolioGrid.appendChild(goProject);
-portfolioGrid.appendChild(shecretProject);
 portfolioGrid.appendChild(gotProject);
 portfolioGrid.appendChild(movieSearchProject);
 portfolioGrid.appendChild(upholdProject);
+
 // portfolioGrid.appendChild(barcodePriceProject);
 // portfolioGrid.appendChild(missingPeopleProject);
 // portfolioGrid.appendChild(geoCDNProject);
