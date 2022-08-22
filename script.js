@@ -409,6 +409,8 @@ addContactCard("Give me a call (whatsapp and signal)", "./images/phone-48.png", 
 addContactCard("Add me on LinkedIn", "./images/linkedin-48.png", "LinkedIn", "https://www.linkedin.com/in/costa86/", "linkedin.com/in/costa86");
 addContactCard("Check all my projects", "./images/github-48.png", "GitHub", "https://github.com/costa86", "github.com/costa86");
 addContactCard("See my articles on dev.to", "./images/article-48.png", "Articles", "https://dev.to/costa86", "dev.to/costa86");
+addContactCard("My published Rust projects", "./images/download-48.png", "Rust crates", "https://crates.io/users/costa86", "crates.io/users/costa86");
+
 
 let goToTopIcon = document.getElementById("goToTop");
 
