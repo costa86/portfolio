@@ -1,4 +1,5 @@
-const STANDALONE = "Standalone executable project. Just run it without installing any dependencies"
+const STANDALONE = "Standalone executable project. Just run it without installing any dependencies";
+const CLI = "Interactive user-friendly CLI";
 
 function addContactCard(title, src, alt, href, html) {
     let target = document.getElementById("contact-grid");
@@ -141,11 +142,11 @@ let gotImages = {
 };
 
 let gotStack = [
-    "Python", 
-    "HTML + CSS", 
-    "Bash", 
-    "Docker", 
-    "Flask", 
+    "Python",
+    "HTML + CSS",
+    "Bash",
+    "Docker",
+    "Flask",
     "MongoDB",
     "Terraform"
 ];
@@ -158,9 +159,9 @@ let gotFeatures = [
 ];
 
 let gotProject = createPortfolioCard(
-    gotStack, 
-    "GAME OF THRONES API", 
-    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was featured at Docker All-Hands #4, on Dec 09, 2021 (check the video)", 
+    gotStack,
+    "GAME OF THRONES API",
+    "Containerized API to serve episodes related to the TV show Game of Thrones. This project was featured at Docker All-Hands #4, on Dec 09, 2021 (check the video)",
     gotFeatures, gotImages
 );
 
@@ -285,31 +286,33 @@ let pipProject = createPortfolioCard(
 );
 //
 
-//Go CLI
-let goImages = {
-    "github": "https://github.com/costa86/golang-password-vault",
-    "video": "https://asciinema.org/a/EQXk8KpCm4htLxiRUCSjY62eI"
+//SafePass
+let safePassImages = {
+    "github": "https://github.com/costa86/safepass",
+    "download": "https://github.com/costa86/safepass/blob/main/safepass"
 };
-let goStack = ["Golang"];
-let goFeatures = [
-    "Get a password by entering a master password",
-    "Command-Line Interface",
-    "Turn it into a .exe or binary, so the source code is obfuscated"
+let safePassStack = ["Rust", "SQLite"];
+let safePassFeatures = [
+    "Stores password with encryption in database",
+    "Uses file as master key",
+    "Interactive user-friendly CLI",
+    "Ideal for storing passwords to streaming services",
+    STANDALONE
 ];
-let goProject = createPortfolioCard(
-    goStack,
-    "PASSWORD MANAGER",
-    "CLI to store and retrieve passwords",
-    goFeatures,
-    goImages
+let safePassProject = createPortfolioCard(
+    safePassStack,
+    "SAFEPASS",
+    "Password manager",
+    safePassFeatures,
+    safePassImages
 );
 //
 
 
 //Rust json-parser
 let jsonParserImages = {
-    "github": "https://github.com/costa86/json-parser",
-    "download": "https://github.com/costa86/json-parser/blob/master/json-parser"
+    "github": "https://github.com/costa86/jfp",
+    "download": "https://github.com/costa86/jfp/blob/main/jfp"
 };
 let jsonParserStack = ["Rust"];
 let jsonParserFeatures = [
@@ -318,7 +321,7 @@ let jsonParserFeatures = [
 ];
 let jsonParserProject = createPortfolioCard(
     jsonParserStack,
-    "JSON PARSER",
+    "JFP",
     "CLI to parse json files",
     jsonParserFeatures,
     jsonParserImages
@@ -331,7 +334,7 @@ let toDoImages = {
     "github": "https://github.com/costa86/rust-to-do-with-sql",
     "download": "https://github.com/costa86/rust-to-do-with-sql/blob/master/tasks"
 };
-let toDoStack = ["Rust","SQLite"];
+let toDoStack = ["Rust", "SQLite"];
 let toDoFeatures = [
     "List, add, delete and edit activities in a table format",
     "Activities are stored on SQL database",
@@ -356,29 +359,33 @@ let gitAutoFeatures = [
     "List repositories",
     "Create repository",
     "Delete repository",
+    "List Gists",
+    CLI,
     STANDALONE
 ];
 let gitAutoProject = createPortfolioCard(
     gitAutoStack,
     "AUTOGIT",
-    "CLI to automate operations on GitHub using its API",
+    "Automation of GitHub procedures",
     gitAutoFeatures,
-    gitAutoImages
+    gitAutoImages,
 );
 //
 
 //Shecret
 let shecretImages = {
     "github": "https://github.com/costa86/shecret",
-    "download":"https://github.com/costa86/shecret/blob/master/shecret",
-    "video":"https://asciinema.org/a/gWB0W7h4BER9Raaq4DzpNEsYk"
+    "download": "https://github.com/costa86/shecret/blob/master/shecret",
+    "video": "https://asciinema.org/a/gWB0W7h4BER9Raaq4DzpNEsYk"
 };
-let shecretStack = ["Rust","SQLite"];
+let shecretStack = ["Rust", "SQLite"];
 let shecretFeatures = [
     "Start SSH connection",
     "Start SFTP connection",
     "Create SSH keys",
-    "List connections"
+    "List connections",
+    CLI,
+    STANDALONE
 ];
 let shecretProject = createPortfolioCard(
     shecretStack,
@@ -392,8 +399,8 @@ let shecretProject = createPortfolioCard(
 portfolioGrid.appendChild(gitAutoProject);
 portfolioGrid.appendChild(shecretProject);
 portfolioGrid.appendChild(jsonParserProject);
+portfolioGrid.appendChild(safePassProject);
 portfolioGrid.appendChild(toDoProject);
-portfolioGrid.appendChild(goProject);
 portfolioGrid.appendChild(gotProject);
 portfolioGrid.appendChild(movieSearchProject);
 portfolioGrid.appendChild(upholdProject);
