@@ -411,7 +411,7 @@ portfolioGrid.appendChild(upholdProject);
 // portfolioGrid.appendChild(pipProject);  
 
 
-addContactCard("Drop me an email", "./images/email-48.png", "Email", "mailto:costa86@zoho.com", "costa86@zoho.com");
+addContactCard("Drop me an email", "./images/email-48.png", "Email", "mailto:costa2016@pm.me", "costa2016@pm.me");
 addContactCard("Give me a call (whatsapp and signal)", "./images/phone-48.png", "Phone", "tel:+351920438006", "(+351) 920 438 006");
 addContactCard("Add me on LinkedIn", "./images/linkedin-48.png", "LinkedIn", "https://www.linkedin.com/in/costa86/", "linkedin.com/in/costa86");
 addContactCard("Check all my projects", "./images/github-48.png", "GitHub", "https://github.com/costa86", "github.com/costa86");
