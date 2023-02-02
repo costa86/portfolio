@@ -372,6 +372,26 @@ let gitAutoProject = createPortfolioCard(
 );
 //
 
+//ChatGPT assistent
+let gptImages = {
+    "github": "https://github.com/costa86/chatgpt-audio-assistent",
+};
+let gptStack = ["Python"];
+let gptFeatures = [
+    "Prompts ChatGPT with microphone input",
+    "Saves response as audio file",
+    "Saves response as text file",
+];
+let gptProject = createPortfolioCard(
+    gptStack,
+    "ChatGPT AUDIO ASSISTENT",
+    "Prompt ChatGPT via audio, instead of text",
+    gptFeatures,
+    gptImages,
+);
+//
+
+
 //Shecret
 let shecretImages = {
     "github": "https://github.com/costa86/shecret",
@@ -396,6 +416,7 @@ let shecretProject = createPortfolioCard(
 );
 //
 
+portfolioGrid.appendChild(gptProject);
 portfolioGrid.appendChild(gitAutoProject);
 portfolioGrid.appendChild(shecretProject);
 portfolioGrid.appendChild(jsonParserProject);
@@ -403,7 +424,6 @@ portfolioGrid.appendChild(safePassProject);
 portfolioGrid.appendChild(toDoProject);
 portfolioGrid.appendChild(gotProject);
 portfolioGrid.appendChild(movieSearchProject);
-portfolioGrid.appendChild(upholdProject);
 
 // portfolioGrid.appendChild(barcodePriceProject);
 // portfolioGrid.appendChild(missingPeopleProject);
