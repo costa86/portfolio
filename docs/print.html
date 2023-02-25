@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">About me</a></li><li class="chapter-item expanded affix "><a href="cv/cv.html">CV</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="projects/python/python.html"><strong aria-hidden="true">1.</strong> Python</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="projects/python/chatgpt.html"><strong aria-hidden="true">1.1.</strong> ChatGPT voice assistent</a></li><li class="chapter-item expanded "><a href="projects/python/got.html"><strong aria-hidden="true">1.2.</strong> Game of Thrones API</a></li></ol></li><li class="chapter-item expanded "><a href="projects/rust/rust.html"><strong aria-hidden="true">2.</strong> Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="projects/rust/autogit.html"><strong aria-hidden="true">2.1.</strong> AutoGit</a></li><li class="chapter-item expanded "><a href="projects/rust/shecret.html"><strong aria-hidden="true">2.2.</strong> Shecret</a></li><li class="chapter-item expanded "><a href="projects/rust/jfp.html"><strong aria-hidden="true">2.3.</strong> JFP</a></li><li class="chapter-item expanded "><a href="projects/rust/safepass.html"><strong aria-hidden="true">2.4.</strong> SafePass</a></li></ol></li><li class="chapter-item expanded "><a href="projects/js/js.html"><strong aria-hidden="true">3.</strong> JavaScript</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="projects/js/movie-search.html"><strong aria-hidden="true">3.1.</strong> Movie Search</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contact</li><li class="chapter-item expanded "><a href="contact.html"><strong aria-hidden="true">4.</strong> Contact</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">About me</a></li><li class="chapter-item expanded affix "><a href="cv/cv.html">CV</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="projects/python/python.html"><strong aria-hidden="true">1.</strong> Python</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="projects/python/chatgpt.html"><strong aria-hidden="true">1.1.</strong> ChatGPT voice assistent</a></li><li class="chapter-item expanded "><a href="projects/python/got.html"><strong aria-hidden="true">1.2.</strong> Game of Thrones API</a></li><li class="chapter-item expanded "><a href="projects/python/gist.html"><strong aria-hidden="true">1.3.</strong> AutoGist</a></li></ol></li><li class="chapter-item expanded "><a href="projects/rust/rust.html"><strong aria-hidden="true">2.</strong> Rust</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="projects/rust/autogit.html"><strong aria-hidden="true">2.1.</strong> AutoGit</a></li><li class="chapter-item expanded "><a href="projects/rust/shecret.html"><strong aria-hidden="true">2.2.</strong> Shecret</a></li><li class="chapter-item expanded "><a href="projects/rust/jfp.html"><strong aria-hidden="true">2.3.</strong> JFP</a></li><li class="chapter-item expanded "><a href="projects/rust/safepass.html"><strong aria-hidden="true">2.4.</strong> SafePass</a></li><li class="chapter-item expanded "><a href="projects/rust/bank-api.html"><strong aria-hidden="true">2.5.</strong> BankingAPI</a></li></ol></li><li class="chapter-item expanded "><a href="projects/js/js.html"><strong aria-hidden="true">3.</strong> JavaScript</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="projects/js/movie-search.html"><strong aria-hidden="true">3.1.</strong> Movie Search</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Contact</li><li class="chapter-item expanded "><a href="contact.html"><strong aria-hidden="true">4.</strong> Contact</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -152,7 +152,7 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="python"><a class="header" href="#python">Python</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chatgpt-voice-assistent"><a class="header" href="#chatgpt-voice-assistent">ChatGPT voice assistent</a></h1>
 <h2 id="description"><a class="header" href="#description">Description</a></h2>
-<p>Prompts the 2023 popular AI prompt ChatGPT via audio, instead of text.</p>
+<p>Prompts the 2023 popular AI prompt ChatGPT via voice, instead of text</p>
 <h2 id="stack"><a class="header" href="#stack">Stack</a></h2>
 <ul>
 <li>Python</li>
@@ -166,11 +166,12 @@
 <p><a href="https://github.com/costa86/chatgpt-audio-assistent"><img src="projects/python/../../github-48.png" alt="" title="Repository" /></a> </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="game-of-thrones-api"><a class="header" href="#game-of-thrones-api">Game of Thrones API</a></h1>
 <h2 id="description-1"><a class="header" href="#description-1">Description</a></h2>
-<p>Containerized API to serve episodes related to the TV show Game of Thrones. This project was featured at Docker All-Hands #4, on Dec 09, 2021 (check the video)</p>
+<p>Containerized REST API to serve episodes related to the TV show Game of Thrones. This project was presented at a official Docker event (watch the video below)</p>
 <h2 id="stack-1"><a class="header" href="#stack-1">Stack</a></h2>
 <ul>
 <li>Python</li>
-<li>HTML + CSS</li>
+<li>HTML</li>
+<li>CSS</li>
 <li>Bash</li>
 <li>Docker</li>
 <li>Flask</li>
@@ -183,18 +184,32 @@
 <li>CRUD operations for comments of an episode</li>
 <li>Get episodes by rating</li>
 <li>Auto-deploy API to production cloud server with Terraform</li>
-<li>API Documentation available at: https://documenter.getpostman.com/view/18638297/UVJhDEuV</li>
+<li>API Documentation available <a href="https://documenter.getpostman.com/view/18638297/UVJhDEuV">here</a></li>
 </ul>
 <p><a href="https://github.com/costa86/game-of-thrones-api"><img src="projects/python/../../github-48.png" alt="" title="Repository" /></a> <a href="https://www.youtube.com/watch?v=fy6pXminRLU"><img src="projects/python/../../play-48.png" alt="" title="Watch video" /></a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="autogist"><a class="header" href="#autogist">AutoGist</a></h1>
+<h2 id="description-2"><a class="header" href="#description-2">Description</a></h2>
+<p>Interactive CLI integrated with GitHub's API to manage Gists</p>
+<h2 id="stack-2"><a class="header" href="#stack-2">Stack</a></h2>
+<ul>
+<li>Python</li>
+</ul>
+<h2 id="features-2"><a class="header" href="#features-2">Features:</a></h2>
+<ul>
+<li>Creates Gists based on files</li>
+<li>List Gists</li>
+<li>Delete Gists</li>
+</ul>
+<p><a href="https://gist.github.com/costa86/f64890f4bfa8cf5632137ac9fe9773aa"><img src="projects/python/../../github-48.png" alt="" title="Repository" /></a> </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rust"><a class="header" href="#rust">Rust</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="autogit"><a class="header" href="#autogit">Autogit</a></h1>
-<h2 id="description-2"><a class="header" href="#description-2">Description</a></h2>
-<p>Automation of GitHub procedures</p>
-<h2 id="stack-2"><a class="header" href="#stack-2">Stack</a></h2>
+<h2 id="description-3"><a class="header" href="#description-3">Description</a></h2>
+<p>Interactive CLI integrated with GitHub's API to manage projects</p>
+<h2 id="stack-3"><a class="header" href="#stack-3">Stack</a></h2>
 <ul>
 <li>Rust</li>
 </ul>
-<h2 id="features-2"><a class="header" href="#features-2">Features:</a></h2>
+<h2 id="features-3"><a class="header" href="#features-3">Features:</a></h2>
 <ul>
 <li>List repositories</li>
 <li>Create repository</li>
@@ -205,15 +220,15 @@
 </ul>
 <p><a href="https://github.com/costa86/autogit"><img src="projects/rust/../../github-48.png" alt="" title="Repository" /></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="shecret"><a class="header" href="#shecret">Shecret</a></h1>
-<h2 id="description-3"><a class="header" href="#description-3">Description</a></h2>
+<h2 id="description-4"><a class="header" href="#description-4">Description</a></h2>
 <p>SSH and SFTP Client</p>
 <p><img src="projects/rust/../../sean.jpg" alt="" /></p>
-<h2 id="stack-3"><a class="header" href="#stack-3">Stack</a></h2>
+<h2 id="stack-4"><a class="header" href="#stack-4">Stack</a></h2>
 <ul>
 <li>Rust</li>
 <li>SQLite</li>
 </ul>
-<h2 id="features-3"><a class="header" href="#features-3">Features:</a></h2>
+<h2 id="features-4"><a class="header" href="#features-4">Features:</a></h2>
 <ul>
 <li>Start SSH connection</li>
 <li>Start SFTP connection</li>
@@ -224,26 +239,26 @@
 </ul>
 <p><a href="https://github.com/costa86/shecret"><img src="projects/rust/../../github-48.png" alt="" title="Repository" /></a> <a href="https://asciinema.org/a/gWB0W7h4BER9Raaq4DzpNEsYk"><img src="projects/rust/../../play-48.png" alt="" title="Watch video" /></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="jfp"><a class="header" href="#jfp">JFP</a></h1>
-<h2 id="description-4"><a class="header" href="#description-4">Description</a></h2>
+<h2 id="description-5"><a class="header" href="#description-5">Description</a></h2>
 <p>CLI to parse json files</p>
-<h2 id="stack-4"><a class="header" href="#stack-4">Stack</a></h2>
+<h2 id="stack-5"><a class="header" href="#stack-5">Stack</a></h2>
 <ul>
 <li>Rust</li>
 </ul>
-<h2 id="features-4"><a class="header" href="#features-4">Features:</a></h2>
+<h2 id="features-5"><a class="header" href="#features-5">Features:</a></h2>
 <ul>
 <li>Parse JSON files</li>
 <li>Standalone executable project. Just run it without installing any dependencies</li>
 </ul>
 <p><a href="https://github.com/costa86/jfp"><img src="projects/rust/../../github-48.png" alt="" title="Repository" /></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safepass"><a class="header" href="#safepass">SafePass</a></h1>
-<h2 id="description-5"><a class="header" href="#description-5">Description</a></h2>
+<h2 id="description-6"><a class="header" href="#description-6">Description</a></h2>
 <p>Password manager</p>
-<h2 id="stack-5"><a class="header" href="#stack-5">Stack</a></h2>
+<h2 id="stack-6"><a class="header" href="#stack-6">Stack</a></h2>
 <ul>
 <li>Rust</li>
 </ul>
-<h2 id="features-5"><a class="header" href="#features-5">Features:</a></h2>
+<h2 id="features-6"><a class="header" href="#features-6">Features:</a></h2>
 <ul>
 <li>Stores password with encryption in database</li>
 <li>Uses file as master key</li>
@@ -252,11 +267,31 @@
 <li>Standalone executable project. Just run it without installing any dependencies</li>
 </ul>
 <p><a href="https://github.com/costa86/safepass"><img src="projects/rust/../../github-48.png" alt="" title="Repository" /></a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bankingapi"><a class="header" href="#bankingapi">BankingAPI</a></h1>
+<h2 id="description-7"><a class="header" href="#description-7">Description</a></h2>
+<p>Blazing fast REST API to handle basic banking operations</p>
+<h2 id="stack-7"><a class="header" href="#stack-7">Stack</a></h2>
+<ul>
+<li>Rust</li>
+<li>Actix-web</li>
+<li>SQLite</li>
+</ul>
+<h2 id="features-7"><a class="header" href="#features-7">Features:</a></h2>
+<ul>
+<li>Create customers</li>
+<li>Deposits</li>
+<li>Withdrawals</li>
+<li>Transfer money among customers</li>
+<li>Payments</li>
+<li>JWT authentication</li>
+<li>API Documentation available <a href="https://documenter.getpostman.com/view/22809238/2s93CPqCBi">here</a></li>
+</ul>
+<p><a href="https://github.com/costa86/bank-api"><img src="projects/rust/../../github-48.png" alt="" title="Repository" /></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="javascript"><a class="header" href="#javascript">JavaScript</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="movie-search"><a class="header" href="#movie-search">Movie Search</a></h1>
-<h2 id="description-6"><a class="header" href="#description-6">Description</a></h2>
+<h2 id="description-8"><a class="header" href="#description-8">Description</a></h2>
 <p>Web app to search and display information about movies, TV shows and games. The data is obtained from an API</p>
-<h2 id="stack-6"><a class="header" href="#stack-6">Stack</a></h2>
+<h2 id="stack-8"><a class="header" href="#stack-8">Stack</a></h2>
 <ul>
 <li>HTML</li>
 <li>CSS</li>
@@ -264,7 +299,7 @@
 <li>React</li>
 <li>JavaScript</li>
 </ul>
-<h2 id="features-6"><a class="header" href="#features-6">Features:</a></h2>
+<h2 id="features-8"><a class="header" href="#features-8">Features:</a></h2>
 <ul>
 <li>Search for a movie/serie.</li>
 <li>See list of results.</li>
